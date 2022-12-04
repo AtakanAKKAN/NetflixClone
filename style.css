@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 100;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    padding: 18px 4%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.logo img{
+    width: 140px;
+    height: auto;
+    margin-right: 18px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a:hover{
+    color: #d3d3d4;
+}
+
+.navbar .active{
+    margin-left: 18px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.second-header{
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+.nav-element{
+    font-size: 35px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.padding-fix{
+    padding: 0 4%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(img/882548.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: flex-start;
+}
+
+.main-text{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+.main-text h4{
+    color: #f2f2f2;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main-text h2{
+    color: #f2f2f2;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.fix{
+    padding-right: 7px;
+}
+
+.button a{
+   border: 1px solid white;
+   padding: 10px 30px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   background-color: #f2f2f2;
+   font-size: 28px;
+   transition: .4s;
+   -webkit-transition: .4s;
+   -moz-transition: .4s;
+   -ms-transition: .4s;
+   -o-transition: .4s;
+   color: black;
+}
+
+.button a:hover{
+    background-color: #d3d3d4;
+}
+
+.button a:last-child{
+    margin-left: 25px;
+    background-color: rgb(143, 140, 140);
+    border-color: rgb(143, 140, 140);
+}
+
+.button a:last-child:hover{
+    background-color: #d3d3d4;
+    border-color: #d3d3d4;
+}
+
+.space{
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(20, 20, 20);
+}
+
+.size-fix span{
+    font-size: 1.2vw;
+    color: #f2f2f2;
+    margin-top: 50px;
+    margin: 0 0 0 3%;
+    font-weight: 600;
+}
+
+.bgcolor{
+    background-color: rgb(20, 20, 20);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: 0 0 0 3%;
+    }
+    .wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+    }
+    .wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+    }
+    .wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+    }
+    .wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    }
+    .wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+    }
+    .wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+    }
+
+.img-fix{
+    width: 50%;
+}
+    
+    @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+    display: none;
+    }
+    }
+
+.third img{
+    width: 186px;
+    height: auto;
+
+}
+
+.third .item img{
+    position: relative;
+    left:100px;
+    z-index: 1;
+}
+
+.third .item{
+    position: relative;
+}
+
+.third .third-number{
+    font-size: 346px;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: -30px;
+    display: inline-block;
+    z-index: 0;
+    justify-content: center;
+    margin-top: -90px;
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
+}
+
+.end{
+    height: 600px;
+    position: relative;
+}
+
+.footer{
+    padding: 0 10%;
+    
+}
+.footer-list{
+    display: flex;
+    position: absolute;
+    top: 100px;
+}
+
+.footer-list li a{
+    font-size: 35px;
+    color: #fff;
+    margin: 20px;
+}
+
+.footer-link{
+    position: absolute;
+    top: 150px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+.link{
+    flex-basis: 25%;
+    margin: 20px;
+    transition: .4s;
+}
+
+.link a{
+    font-size: 1.1rem;
+    color: #d3d3d4;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+.footer-btn{
+    position: absolute;
+    top: 450px;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.footer-btn:hover{
+    background-color: white;
+    color: rgb(20, 20, 20)
+}
+
+.footer-end{
+    position: absolute;
+    bottom: 25px;
+    color: white;
+}
