@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +19,19 @@
 
     <header id="navbar">
             <a href="#" class="logo"><img src="img/Netflix_2015_logo.svg.png" alt="Logo"></a>
+
+            <ul class="m-navbar">
+                <li><a href="#" class="responsive-links">Göz At<i class='bx bxs-down-arrow x'></i></a>
+                    <ul id="responsive-list">
+                        <li class="responsive-link"><a href="#" class="active responsive-link">Anasayfa</a></li>
+                        <li class="responsive-link"><a href="#diziler">Diziler</a></li>
+                        <li class="responsive-link"><a href="#filmler">Filmler</a></li>
+                        <li class="responsive-link"><a href="#popüler">Yeni ve Popüler</a></li>
+                        <li class="responsive-link"><a href="#listem">Listem</a></li>
+                        <li class="responsive-link"><a href="#">Dile Göre Göz At</a></li>
+                    </ul>
+                </li>
+            </ul>
      
             <ul class="navbar">
                 <li><a href="#" class="active">Anasayfa</a></li>
@@ -51,191 +66,106 @@
 
     <div class="space"></div>
 
-    <section class="second bgcolor">
+<section class="second bgcolor">
 
     <div class="size-fix"><span>Atakan, İzlemeye Devam Et</span></div>
 
+    <section class="thumbSection">
+
+        <div class="thumbTiles swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ7FKuudHAGkT3KN8_n-1oEOCMwj_iiTmak4l2tWIplqKpLN-7YDd-vLw51d2BBvCmSlPHjXsLI91Q3xWLu3YcpumpVUbtx6Tww.webp?r=b84" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFfuoU4rnrXk50fjUjzle0OjZj8Sr40bucK1awD34hMUNwfrljs0-X52ZgBaOpgb52P9G0KZ3_VUhUb7VqJ31Fx8_pIglYJzTc.webp?r=75b" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfj-MZdGCLIOkB1OrtyaJLzx8N5xk2GjPL_aRfminOyHVNRhj4J56DznpVW0b-ouVzmMQzFYn8E-DtepEDbfe8JVYSveiY4RdnA.webp?r=a8a" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS_Lxy1JGaUSAkjZ-MYKNYsjmnXh0NAAOmdfzCtsMQYvqHYqoHKa8cLctO-uhnYgTUEMpV-i5KJ7oahQZ5E3n7y3moiWjgCwUC-MZ6rF72dL0nM7b2rSKH3Cwe0nF1GczxIw.jpg?r=cba" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFYuAzPeFpOzVVMRwoZOAk1qWDhF-DUt_lg9s-ZQTmn_Cw2mbgED2KdgQRVop--dF3vEBAYQKZaC2VrCtNJrA5xA6XboF4JrVwnxG93WbifR9-00-C_21G_PLy7BbmlvyP5.jpg?r=146" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY0ZTAjc69lxVRFu9m8VieVOomKplkgVTPivKtMjBRTKjYKix1wQ0ozQD9vE4uPbOpkizqrYr4A9lac68pwIihWH0Qkl2O4e1W4WQhBnM8eVxZFB6BmtSYIz6x2g8CGiX_ou.jpg?r=855" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaoHhVcY9KILkaJ0FIsXEcBPFK-E_JW_GRNXQsafM52X3AQOmq8414xg2iwOkGBfYUXpfisaGJqSA4naCGAJ9pK3DeDYXmJzwa_kL-lpKRwVVjjcWPCeAnlEBCQIhu6E37EF.jpg?r=22a" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYTOBm-5qIwtAqL91apcRyiQP76fo7DdyJRSk0RjsWXsAbEtVupxa3fUf2Y5jhDAc_wKPB6pz1NjdvUmMXU8VBQr1t4TGB84NXc.webp?r=47f" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSwi5MmM8-p3_qwOvokzB2YFl0-cx63bab0XzXH-Czo0PSahvn4EdJ8uM-_Tk38a2zF6-HkmA5D6Oo96xh_6CqeFUb5MNdE_oE8.webp?r=5ec" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc_T7cg6AxbtEsTt6CyHnx-v1QA4Nb7PPaGW1aRm-9yfRjDwosM55qNXcDRUBPtv6kesl3t2C57vYtc_Sx9lXmLHExcMUUlCufbjDd19MTzTCVgMN7ZQemeUUur98hhEKq0p.jpg?r=ca3" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWOP1U1L-aDj_K_8Ii9bG-zf8OEkHpJjMwhK_TklRzL-kFogtEst3twof9ebXkK-dOO7DFGxO9UCUS1Z4GVwk3Uavb8D8zOHP5qj5fTaqJnJEtte8fNCaBJ36rutRADdN-4b.jpg?r=592" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXbatskMhdt0bW07IoblE41nqhxVg_pbZoNqzgKrXHDJRJnlU2_HeOMBa64uusr3N--SeDE9xyeORY54go0VAyIJ8jor5UUKEZk.webp?r=bc0" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXCadUGkwGL8o6X31H_nIXh58NgIqMmA2gUE-_i4UO6nvCksOT5GRpLlngnmKevZTdP0VWe1uja8e0F7t4yrErAdBXhRxjo9r6j84t22oHPqcmAaRT0-oxP7pS24BYoK7C7g.jpg?r=021" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW1IBiR27_qKafiKN5fd6SzQYPWhJWNPdE-646jpL7hDo4dRHvKuPlxyzp8R-kh7yG22HBtir8T-Jv3-RyC0TGeOhDyz5X8pWJSL29aCStXe5FJ1EwDB78lY-_oASdEHQmt_eZ7b2n6CPTkux-YkOrzcAyyDfabeWms4L3qu7DdpOS5asbgzu3oHI5bay_M.jpg?r=082" alt="" class="thumbTile__image"></a></div>
+                    <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf-UB1KiEuJVttEqdZyTeVNmj_DsxgqiiIIzwX2rwpxVHFqdSv8O2v7pQhO-6ldlI_yg6ArdZIxa-524ELhAVijGAlEsSPSXSHYmp01JLwAkXsm_raPi40AwsxGaoLeEOVN4.jpg?r=a6d" alt="" class="thumbTile__image"></a></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </div>
+    </section>
+
     
-    <div class="wrapper" id="listem">
-        <section id="section1">
-        <a href="#section3" class="arrow__btn">‹</a>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ7FKuudHAGkT3KN8_n-1oEOCMwj_iiTmak4l2tWIplqKpLN-7YDd-vLw51d2BBvCmSlPHjXsLI91Q3xWLu3YcpumpVUbtx6Tww.webp?r=b84">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFfuoU4rnrXk50fjUjzle0OjZj8Sr40bucK1awD34hMUNwfrljs0-X52ZgBaOpgb52P9G0KZ3_VUhUb7VqJ31Fx8_pIglYJzTc.webp?r=75b">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfj-MZdGCLIOkB1OrtyaJLzx8N5xk2GjPL_aRfminOyHVNRhj4J56DznpVW0b-ouVzmMQzFYn8E-DtepEDbfe8JVYSveiY4RdnA.webp?r=a8a">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS_Lxy1JGaUSAkjZ-MYKNYsjmnXh0NAAOmdfzCtsMQYvqHYqoHKa8cLctO-uhnYgTUEMpV-i5KJ7oahQZ5E3n7y3moiWjgCwUC-MZ6rF72dL0nM7b2rSKH3Cwe0nF1GczxIw.jpg?r=cba">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFYuAzPeFpOzVVMRwoZOAk1qWDhF-DUt_lg9s-ZQTmn_Cw2mbgED2KdgQRVop--dF3vEBAYQKZaC2VrCtNJrA5xA6XboF4JrVwnxG93WbifR9-00-C_21G_PLy7BbmlvyP5.jpg?r=146">
-        </div>
-        <a href="#section2" class="arrow__btn">›</a>
-        </section>
-        <section id="section2">
-        <a href="#section1" class="arrow__btn">‹</a>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY0ZTAjc69lxVRFu9m8VieVOomKplkgVTPivKtMjBRTKjYKix1wQ0ozQD9vE4uPbOpkizqrYr4A9lac68pwIihWH0Qkl2O4e1W4WQhBnM8eVxZFB6BmtSYIz6x2g8CGiX_ou.jpg?r=855">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaoHhVcY9KILkaJ0FIsXEcBPFK-E_JW_GRNXQsafM52X3AQOmq8414xg2iwOkGBfYUXpfisaGJqSA4naCGAJ9pK3DeDYXmJzwa_kL-lpKRwVVjjcWPCeAnlEBCQIhu6E37EF.jpg?r=22a">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYTOBm-5qIwtAqL91apcRyiQP76fo7DdyJRSk0RjsWXsAbEtVupxa3fUf2Y5jhDAc_wKPB6pz1NjdvUmMXU8VBQr1t4TGB84NXc.webp?r=47f">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSwi5MmM8-p3_qwOvokzB2YFl0-cx63bab0XzXH-Czo0PSahvn4EdJ8uM-_Tk38a2zF6-HkmA5D6Oo96xh_6CqeFUb5MNdE_oE8.webp?r=5ec">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc_T7cg6AxbtEsTt6CyHnx-v1QA4Nb7PPaGW1aRm-9yfRjDwosM55qNXcDRUBPtv6kesl3t2C57vYtc_Sx9lXmLHExcMUUlCufbjDd19MTzTCVgMN7ZQemeUUur98hhEKq0p.jpg?r=ca3">
-        </div>
-        <a href="#section3" class="arrow__btn">›</a>
-        </section>
-        <section id="section3">
-        <a href="#section2" class="arrow__btn">‹</a>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWOP1U1L-aDj_K_8Ii9bG-zf8OEkHpJjMwhK_TklRzL-kFogtEst3twof9ebXkK-dOO7DFGxO9UCUS1Z4GVwk3Uavb8D8zOHP5qj5fTaqJnJEtte8fNCaBJ36rutRADdN-4b.jpg?r=592">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXbatskMhdt0bW07IoblE41nqhxVg_pbZoNqzgKrXHDJRJnlU2_HeOMBa64uusr3N--SeDE9xyeORY54go0VAyIJ8jor5UUKEZk.webp?r=bc0">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXCadUGkwGL8o6X31H_nIXh58NgIqMmA2gUE-_i4UO6nvCksOT5GRpLlngnmKevZTdP0VWe1uja8e0F7t4yrErAdBXhRxjo9r6j84t22oHPqcmAaRT0-oxP7pS24BYoK7C7g.jpg?r=021">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW1IBiR27_qKafiKN5fd6SzQYPWhJWNPdE-646jpL7hDo4dRHvKuPlxyzp8R-kh7yG22HBtir8T-Jv3-RyC0TGeOhDyz5X8pWJSL29aCStXe5FJ1EwDB78lY-_oASdEHQmt_eZ7b2n6CPTkux-YkOrzcAyyDfabeWms4L3qu7DdpOS5asbgzu3oHI5bay_M.jpg?r=082">
-        </div>
-        <div class="item">
-        <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf-UB1KiEuJVttEqdZyTeVNmj_DsxgqiiIIzwX2rwpxVHFqdSv8O2v7pQhO-6ldlI_yg6ArdZIxa-524ELhAVijGAlEsSPSXSHYmp01JLwAkXsm_raPi40AwsxGaoLeEOVN4.jpg?r=a6d">
-        </div>
-        <a href="#section1" class="arrow__btn">›</a>
-        </section>
-        </div>
     </section>
 
     <section class="third bgcolor">
         
         <div class="size-fix"><span>Türkiye'de Bugünün Top 10 Dizi Listesi</span></div>
     
-        <div class="wrapper" id="popüler">
-            <section id="section4">
-            <a href="#section5" class="arrow__btn">‹</a>
-            <div class="item">
-                <span class="third-number">1</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABYhglevclS96LlWjQim3xZ_sznrk2U9luYV_1z06H7AxnY3aSj0DKw80CnTZ1Le5UYj3cGg4s4Ndp1Oq6VJCkXYuXPnf59MFMwBsiyDRpQwtQwH5ylLymhhFX0qV-A-7uw4XqQ.jpg?r=a24">
-            </div>
-            <div class="item">
-                <span class="third-number">2</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABRW00i1yvkb9KslG7M-Z8zDqD25W926EwSvzmIuNFDGmCWwj2dtzRAMp4xbyA_3kArmO1sBcDfpLBPp1UoR3EOjrpV4aAKe-eJ0vPtAgAxqnH1TORo2ZngcR4uQs6bJZ_Rding.jpg?r=2f1">
-            </div>
-            <div class="item">
-                <span class="third-number">3</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABWBDAVlf5TMQVM-mrZ4OWtS6QkMuJxv7qG8cRFmh62z4jnkmiRb9ef6S83PQ5BvPRkZdBQeKrN4eXny2gLLN6gP3U4StUMaodWgCV2933aPXh_8nI1HvCTLh1J_eItkUZh8CoA.jpg?r=ef4">
-            </div>
-            <div class="item">
-                <span class="third-number">4</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABSEjQJArn1pmYg-NpcGKe5SuKXil8XCV_odXdhwpNMMHNtxWzZV9sSLetkzXJv81KMS3UHYIIGEOLiswW4OaxZmRzByrMJi1GCBh9SgG1-zyFAFJfmmaGLHd0QgCS1x9cTyJEzgklOaYj4Wjl6C3bMtPucsIsHfX2kw6hippXnkpERLJeEkH2OqWd_yhrbQHdmZdLbfTL0fDrQJM_h3p8RbOPdhaYZuQM-vO7lQYTw69yHph7qSZRhycBs8oi99Ygyx4-uS8QCGEIv1oNVorzm9H.webp?r=58b">
-            </div>
-            <div class="item">
-                <span class="third-number">5</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABTJ0crNBsx5NTjJwYWGqV6emRll9E6ScwzZm4NY-dxdTDJIfqaxLn9slLPMiRT3YMBTJ_XKuA-4c90w6eXCGAOC3c8D-U4rSTw4UN7OCnOVb9rErU9_25t5caffOiYRGssqXB1gnOq0AyKkCD7g7QhB8EciGltIx35hGYxMGC2sZuUdt3z0yaWKnBbNvoP4Ud-jTn-9PcgHl-qz84C4iqKeYn_PphMc6uXs-UMK_G7HMLHeZ-nyzFC0_ITbswG4TzynMIDPeoBbkOWXCkwiUZvxa6vNwmds3-XWyi9cYrUyZ7pbCoixk.jpg?r=d17">
-            </div>
-            <a href="#section5" class="arrow__btn">›</a>
-            </section>
-            <section id="section5">
-            <a href="#section4" class="arrow__btn">‹</a>
-            <div class="item">
-                <span class="third-number">6</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABY0FhDgwuaRbiONBbeMZ_-IpTIcbtWMMu9pPaGX573ElgGUbPmm8xYOUT3nSbD-oGSUoFtPF-Ql0vbd4jZvzRM7ccnkuSAxKJx1QpruJ2FnS65eAP8afXqyWB2DkCxy5XShNWQI2ypxSyupY4Nzp-1f6hDueG1wkZ_uK4yFaO8jW6MKgEmvEoEYzUSFcIzo1bnzDdXEAds3BQ1MwUN_mTPkBZU46wHIqVwOSDlNnTmQwdOM1JtIDbzYlGeRwfAzwRHFy7gI3AnMcVrG-id6k85Zw5SxZjj7OapQoPhHm4MfRjFMjYBPO.jpg?r=cd0">
-            </div>
-            <div class="item">
-                <span class="third-number">7</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABa70sVlteVcireb0Sa-gymeMK__m2ntT8PV0ewhCeEKYkmoRpxzyIwPZcSUYdtwMBknHbEGHdXg9w_-b8yH6uAxiax0UgS9VA0q2bDc8DFv_ZLinFeU9xd6Zn9OVniGn7qq_5Q.jpg?r=6d7">
-            </div>
-            <div class="item">
-                <span class="third-number">8</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABc9OiZOpHNhdDzE2UMAbpXPw-5-4os1a7dx7sdJn5Xlr3Lwy3ao8CS3ULW3GMom8Sg0aT-xW23RpDHMowngGOxfYHYwUl28-2fezaxIOuN3-rg9YxHLYmTlC7DAEunLdWYRZzQ.jpg?r=b01">
-            </div>
-            <div class="item">
-                <span class="third-number">9</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABTU0hS57GmONLFocj-aZB3HHiIb6MSGVHGDtihDgeDnNcqvGVvwu1k7zFO6DQHm4amySrnrWUoiylGSckgurbYTykErunVMMlCRMacy6YryAEDMAsv9AQ1bwUMKIHPONACkqWDa2LtuqxHtO5uOzGdlZGkhNLL8YgIFvgyAaOzmCPm5fP2Jlud4_A_Ww8SEGm6thSFuyJlQZ7yxXPs0Bu2A3_UyFU5ZWEUze5hTYSLlJ71-58jzejuOlDG9rePFHQlJzzJxD2wdVlvfOnVnlW_kilZDkqxFEx_4rlBe0N5UuIKNQCkLV.jpg?r=42e">
-            </div>
-            <div class="item">
-                <span class="third-number">10</span>
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABSS6tsS4fVRXQSCFWRtNk3aGvSUyW1zzAFb_ab91Tf54VaJyUNpaCR97khd75Cqn-RZPbkw5ReErDZDrvnvw0hg10pU-0bFperUL.webp?r=355">
-            </div>
-            <a href="#section4" class="arrow__btn">›</a>
-            </section>
-            </div>
+        <section class="thumbSection">
+
+            <div class="thumbTiles swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABYhglevclS96LlWjQim3xZ_sznrk2U9luYV_1z06H7AxnY3aSj0DKw80CnTZ1Le5UYj3cGg4s4Ndp1Oq6VJCkXYuXPnf59MFMwBsiyDRpQwtQwH5ylLymhhFX0qV-A-7uw4XqQ.jpg?r=a24" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABRW00i1yvkb9KslG7M-Z8zDqD25W926EwSvzmIuNFDGmCWwj2dtzRAMp4xbyA_3kArmO1sBcDfpLBPp1UoR3EOjrpV4aAKe-eJ0vPtAgAxqnH1TORo2ZngcR4uQs6bJZ_Rding.jpg?r=2f1" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABWBDAVlf5TMQVM-mrZ4OWtS6QkMuJxv7qG8cRFmh62z4jnkmiRb9ef6S83PQ5BvPRkZdBQeKrN4eXny2gLLN6gP3U4StUMaodWgCV2933aPXh_8nI1HvCTLh1J_eItkUZh8CoA.jpg?r=ef4" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABb0X9PVjvmxzRZJi5Aan8COOaE2Ajy-Nu7NwDVxAoMOW7uERs95FdkQllb1H7t6d4sT2grAd7xpQqqP-QZ310qzhMAcL8qeSan-UiL6C6d55kjekR1J3AXKA_x2cNZAnP_Yy5gYV55V3APIEiKNgVXv7QAIQ--Rm5Mads7EAj_W4EvJ4Mjeslb-IGlbyhxkOQQ2f23NjdBoRQfToTtgzs3kLK14xdd2ZsbMXHTAU_5vvoSK8i6iU5AqklgLleEv2xBl1JGeiaF4kGDj-jIhSBQ05fi-ihIeL3by_kHnkaN5K1X4Ba3pB.jpg?r=7d0" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABa70sVlteVcireb0Sa-gymeMK__m2ntT8PV0ewhCeEKYkmoRpxzyIwPZcSUYdtwMBknHbEGHdXg9w_-b8yH6uAxiax0UgS9VA0q2bDc8DFv_ZLinFeU9xd6Zn9OVniGn7qq_5Q.jpg?r=6d7" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABSEjQJArn1pmYg-NpcGKe5SuKXil8XCV_odXdhwpNMMHNtxWzZV9sSLetkzXJv81KMS3UHYIIGEOLiswW4OaxZmRzByrMJi1GCBh9SgG1-zyFAFJfmmaGLHd0QgCS1x9cTyJEzgklOaYj4Wjl6C3bMtPucsIsHfX2kw6hippXnkpERLJeEkH2OqWd_yhrbQHdmZdLbfTL0fDrQJM_h3p8RbOPdhaYZuQM-vO7lQYTw69yHph7qSZRhycBs8oi99Ygyx4-uS8QCGEIv1oNVorzm9H.webp?r=58b" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABTJ0crNBsx5NTjJwYWGqV6emRll9E6ScwzZm4NY-dxdTDJIfqaxLn9slLPMiRT3YMBTJ_XKuA-4c90w6eXCGAOC3c8D-U4rSTw4UN7OCnOVb9rErU9_25t5caffOiYRGssqXB1gnOq0AyKkCD7g7QhB8EciGltIx35hGYxMGC2sZuUdt3z0yaWKnBbNvoP4Ud-jTn-9PcgHl-qz84C4iqKeYn_PphMc6uXs-UMK_G7HMLHeZ-nyzFC0_ITbswG4TzynMIDPeoBbkOWXCkwiUZvxa6vNwmds3-XWyi9cYrUyZ7pbCoixk.jpg?r=d17" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABY0FhDgwuaRbiONBbeMZ_-IpTIcbtWMMu9pPaGX573ElgGUbPmm8xYOUT3nSbD-oGSUoFtPF-Ql0vbd4jZvzRM7ccnkuSAxKJx1QpruJ2FnS65eAP8afXqyWB2DkCxy5XShNWQI2ypxSyupY4Nzp-1f6hDueG1wkZ_uK4yFaO8jW6MKgEmvEoEYzUSFcIzo1bnzDdXEAds3BQ1MwUN_mTPkBZU46wHIqVwOSDlNnTmQwdOM1JtIDbzYlGeRwfAzwRHFy7gI3AnMcVrG-id6k85Zw5SxZjj7OapQoPhHm4MfRjFMjYBPO.jpg?r=cd0" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABTU0hS57GmONLFocj-aZB3HHiIb6MSGVHGDtihDgeDnNcqvGVvwu1k7zFO6DQHm4amySrnrWUoiylGSckgurbYTykErunVMMlCRMacy6YryAEDMAsv9AQ1bwUMKIHPONACkqWDa2LtuqxHtO5uOzGdlZGkhNLL8YgIFvgyAaOzmCPm5fP2Jlud4_A_Ww8SEGm6thSFuyJlQZ7yxXPs0Bu2A3_UyFU5ZWEUze5hTYSLlJ71-58jzejuOlDG9rePFHQlJzzJxD2wdVlvfOnVnlW_kilZDkqxFEx_4rlBe0N5UuIKNQCkLV.jpg?r=42e" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/oQyw8Fv9eE41UPapt7zHvdUdzrE/AAAABSS6tsS4fVRXQSCFWRtNk3aGvSUyW1zzAFb_ab91Tf54VaJyUNpaCR97khd75Cqn-RZPbkw5ReErDZDrvnvw0hg10pU-0bFperUL.webp?r=355" alt="" class="thumbTile__image"></a></div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+        </div>
+        </section>
     </section>
 
     <section class="four bgcolor">
 
         <div class="size-fix"><span>Amerikan Komedi Dizileri</span></div>   
 
-        <div class="wrapper" id="diziler">
-            <section id="section7">
-            <a href="#section9" class="arrow__btn">‹</a>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRopyssXMefCQFU3dpXqIp9BdepkSp-oXbGG5hn2QFNVAwazvlco13sDEb_I26sdeV1N1Z5vC7-KRK7uZO--W4wyUpn8op77cbJEGdkHneMVbfDQ0RtfkWuOA8PbiSnipmOs.jpg?r=a05">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU2GFHOX_YmwLJTQ9uo7kIOxBKK6Qu61yhv3UI2iA1IuKeSryVhHeZS9TbNu24Ut_oL4lygOnZ80F16ERymsc1WiVolQlTDD4J2KYitwkyQ0zaPMmi5iQTzh_QZVFrLSEgLFkfLPjqEI3LQCDZjaWkPCN2uaJz5MVjAAvVq1P00eAmqlCgsbNgrk50JU7wGDeMFJ1n14YMFLK0DGknlsg5sCwmEQ2UhLO9_5sqIzrEaNewQBTxCP35_vWcbeXNhWeB401ScSZ4OnYXwOzUwNlqkzcMYGaAR-kpTrhzNJC-7VIeFpfZKs-9K2UQ.jpg?r=9ca">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVrvC2AP3mOBglst3OCyzlW2T347m7_fhtInG0Gw7zFHW_9fdxyKefRocztbldOlO6dmR2liC5ZJSnTL4Nf3WqClUdn9Q6GbS1A.webp?r=9d5">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaclMpy35m62rRxrDWk37ehwywctN3Xs40Oxy3Y8wUteZZSTgtCAJgX7bkFLBgFjclSzG-4PogO62aNKQ8Z_wKuu24Ur88AufBg.webp?r=b71">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFfuoU4rnrXk50fjUjzle0OjZj8Sr40bucK1awD34hMUNwfrljs0-X52ZgBaOpgb52P9G0KZ3_VUhUb7VqJ31Fx8_pIglYJzTc.webp?r=75b">
-            </div>
-            <a href="#section8" class="arrow__btn">›</a>
-            </section>
-            <section id="section8">
-            <a href="#section7" class="arrow__btn">‹</a>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSVh4y_v_Unh2kUbXYF-4Jr4-HL-1XFtONnLGjck5DYPaxMIjwi5OudI7e21vTNo_x6FcuP063ZOKq3-f1JRz5tInMR_pHEr6sY.webp?r=3ad">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfO-Fm6YkRFb9sIARf8x60nRDLgHoTPS9F1qZx5C9_sKvZKMPUhkx1HvY4Omnp6sAF-M7s_40K6eUJaP4WY3fVm6vhHGmUYAaa2Iuq3F4VoYaBH6Mtt9q-7wzl32Yy8QTYav.jpg?r=ad2">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVxVzUmKjERTF4TlU-EIxkCVeTEY_x2XIjTJSKVjf8pDUerX_ce1qhwdG6Q-Py-kLWhXrpDFC5ndP_aOtg-ArTu6gw07Ri-9EM8.webp?r=488">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchv4oIBnnNyM8jl3kfvO0MY8ZsyD-KX8BGUsGzL75y2A10tqKMIwcMeuqtGaj5kM4CnpTjkVPuFHgwcxNx8iwssX4XWQQ_CeljaWsMWbJ1iubS_yB8CJnX7OQBBsusETV5n.jpg?r=f24">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQh-iwBnAjej9RQ-kY7dyK-nTYrxN08RGaieM1Nc9g79hGHIV_qWpaF3-nP-j2V3rjQBrRQ6RrSc0mlDrZ6yg3CX-bjXALRc0XA.webp?r=058">
-            </div>
-            <a href="#section9" class="arrow__btn">›</a>
-            </section>
-            <section id="section9">
-            <a href="#section8" class="arrow__btn">‹</a>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZq7K3dXsEwT36Mon_wAiKhcPTDwxgHWnYf5HQtqMtSq964efXyDLRSZ0x5hjRubhSAjOBZnMFb-GgEwM5w22XSsvkTZI3UADcEjE-1N_Cw0xtcVcgJUT_jotDVJaYGaVBOphCPC6YiqjkExJz2b57clOt6Ysd4W0C8vBvyPROP5PqEf0ONaAaICyC36-bPpurj2umRkpY4-DTLPZvu8Iv01hHP6dOaXiX2xpOdUsK7inLFU0m7lUcA9ROlQ88DptVc5bqKhHySFFW0pLqaVGwyi51aqvSINLk8Hpyp5lgNjHv85UxE.jpg?r=73f">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTyWK1MKaw8GcObtz47R2Tj7wkLJ7qQu9tk6TVpcoyxpzD4B-zZ569bQ5vGrREBL-MWFkGilXUwy7tCDaj2XOGkUB4RsbbFAmp9NgSr6lygMpUGNHSlyfrFbUORsRkrxSIoh_ggOvg.jpg">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSfJr-X5Vfy3CRzNDkChsUcOejxm7b2uh8V1u-XbHduLWjd9Tajd-h1LjnoKcUwH7Bz__3iC9IEYlDvvY9WpJnqHRgf-6Hsar6-vem0WdNYqny_-sSV-zTPZT2l4J__cWzZt.jpg?r=4be">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdKAMnfnKKzMlJJwaZm7P0A7lcX5p7xSbOo-S6Gwq0m8oY4P4yXJIrG7fo8g8IdJTucOUnpCIFJS4-DGW_FoJ12PIfaEu2Nzrfj7ctg9zn7BidK_Har8VfqLuCaIhRY6Pwjy.jpg?r=b1b">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcMRJ10aCG1bxiAe3O2qt72dwDl7T6tsVStlVqwb7QjgoBpo7dk5Gs2LIaQ7K6ms-tsTYVAsroIfo5M4oGWGebZKUaqWN3pCU6X2IuaU4yOV6AD7p_Ga5qW0hOAis5723PSf.jpg?r=f41">
-            </div>
-            <a href="#section7" class="arrow__btn">›</a>
-            </section>
-            </div>
+        <section class="thumbSection">
+
+            <div class="thumbTiles swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRopyssXMefCQFU3dpXqIp9BdepkSp-oXbGG5hn2QFNVAwazvlco13sDEb_I26sdeV1N1Z5vC7-KRK7uZO--W4wyUpn8op77cbJEGdkHneMVbfDQ0RtfkWuOA8PbiSnipmOs.jpg?r=a05" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU2GFHOX_YmwLJTQ9uo7kIOxBKK6Qu61yhv3UI2iA1IuKeSryVhHeZS9TbNu24Ut_oL4lygOnZ80F16ERymsc1WiVolQlTDD4J2KYitwkyQ0zaPMmi5iQTzh_QZVFrLSEgLFkfLPjqEI3LQCDZjaWkPCN2uaJz5MVjAAvVq1P00eAmqlCgsbNgrk50JU7wGDeMFJ1n14YMFLK0DGknlsg5sCwmEQ2UhLO9_5sqIzrEaNewQBTxCP35_vWcbeXNhWeB401ScSZ4OnYXwOzUwNlqkzcMYGaAR-kpTrhzNJC-7VIeFpfZKs-9K2UQ.jpg?r=9ca" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVrvC2AP3mOBglst3OCyzlW2T347m7_fhtInG0Gw7zFHW_9fdxyKefRocztbldOlO6dmR2liC5ZJSnTL4Nf3WqClUdn9Q6GbS1A.webp?r=9d5" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaclMpy35m62rRxrDWk37ehwywctN3Xs40Oxy3Y8wUteZZSTgtCAJgX7bkFLBgFjclSzG-4PogO62aNKQ8Z_wKuu24Ur88AufBg.webp?r=b71" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFfuoU4rnrXk50fjUjzle0OjZj8Sr40bucK1awD34hMUNwfrljs0-X52ZgBaOpgb52P9G0KZ3_VUhUb7VqJ31Fx8_pIglYJzTc.webp?r=75b" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSVh4y_v_Unh2kUbXYF-4Jr4-HL-1XFtONnLGjck5DYPaxMIjwi5OudI7e21vTNo_x6FcuP063ZOKq3-f1JRz5tInMR_pHEr6sY.webp?r=3ad" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVxVzUmKjERTF4TlU-EIxkCVeTEY_x2XIjTJSKVjf8pDUerX_ce1qhwdG6Q-Py-kLWhXrpDFC5ndP_aOtg-ArTu6gw07Ri-9EM8.webp?r=488" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQh-iwBnAjej9RQ-kY7dyK-nTYrxN08RGaieM1Nc9g79hGHIV_qWpaF3-nP-j2V3rjQBrRQ6RrSc0mlDrZ6yg3CX-bjXALRc0XA.webp?r=058" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfO-Fm6YkRFb9sIARf8x60nRDLgHoTPS9F1qZx5C9_sKvZKMPUhkx1HvY4Omnp6sAF-M7s_40K6eUJaP4WY3fVm6vhHGmUYAaa2Iuq3F4VoYaBH6Mtt9q-7wzl32Yy8QTYav.jpg?r=ad2" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchv4oIBnnNyM8jl3kfvO0MY8ZsyD-KX8BGUsGzL75y2A10tqKMIwcMeuqtGaj5kM4CnpTjkVPuFHgwcxNx8iwssX4XWQQ_CeljaWsMWbJ1iubS_yB8CJnX7OQBBsusETV5n.jpg?r=f24" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZq7K3dXsEwT36Mon_wAiKhcPTDwxgHWnYf5HQtqMtSq964efXyDLRSZ0x5hjRubhSAjOBZnMFb-GgEwM5w22XSsvkTZI3UADcEjE-1N_Cw0xtcVcgJUT_jotDVJaYGaVBOphCPC6YiqjkExJz2b57clOt6Ysd4W0C8vBvyPROP5PqEf0ONaAaICyC36-bPpurj2umRkpY4-DTLPZvu8Iv01hHP6dOaXiX2xpOdUsK7inLFU0m7lUcA9ROlQ88DptVc5bqKhHySFFW0pLqaVGwyi51aqvSINLk8Hpyp5lgNjHv85UxE.jpg?r=73f" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTyWK1MKaw8GcObtz47R2Tj7wkLJ7qQu9tk6TVpcoyxpzD4B-zZ569bQ5vGrREBL-MWFkGilXUwy7tCDaj2XOGkUB4RsbbFAmp9NgSr6lygMpUGNHSlyfrFbUORsRkrxSIoh_ggOvg.jpg" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSfJr-X5Vfy3CRzNDkChsUcOejxm7b2uh8V1u-XbHduLWjd9Tajd-h1LjnoKcUwH7Bz__3iC9IEYlDvvY9WpJnqHRgf-6Hsar6-vem0WdNYqny_-sSV-zTPZT2l4J__cWzZt.jpg?r=4be" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdKAMnfnKKzMlJJwaZm7P0A7lcX5p7xSbOo-S6Gwq0m8oY4P4yXJIrG7fo8g8IdJTucOUnpCIFJS4-DGW_FoJ12PIfaEu2Nzrfj7ctg9zn7BidK_Har8VfqLuCaIhRY6Pwjy.jpg?r=b1b" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcMRJ10aCG1bxiAe3O2qt72dwDl7T6tsVStlVqwb7QjgoBpo7dk5Gs2LIaQ7K6ms-tsTYVAsroIfo5M4oGWGebZKUaqWN3pCU6X2IuaU4yOV6AD7p_Ga5qW0hOAis5723PSf.jpg?r=f41" alt="" class="thumbTile__image"></a></div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+        </div>
+        </section>
 
     </section>    
 
@@ -243,65 +173,35 @@
 
         <div class="size-fix"><span>Türk Yapımı Filmler</span></div>   
 
-        <div class="wrapper" id="filmler">
-            <section id="section10">
-            <a href="#section12" class="arrow__btn">‹</a>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZR5vKXxcOXIYhPM1SDoV_YHTrDnGvDFextj1BHhb_vfqzqrD8xR4vg6AwALfr_OxPBAneMFzf1QeiSeEzOZoxLi7KzgV5-vDlA.webp?r=8ef">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVTSXUXJW8D3BtW1NYiAbUM-1hkFB38JwEV3ZiO74UURqVCvd_I4JNMlltkjb-aCrtstJ0wZ39xXIrj7yAukwwOqtqpCWs_leWQ.webp?r=24f">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe5htHVu08LbTjgrX4ajJ8SgGt9Z5LScORnE_7tIeTYSq7DTMj97i9yPOQKPix5jjQ4xexNI2GVIif1zzVmZeeKMX-TRZatwPJU.webp?r=780">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdCLIK4MkKPRPi5zhchTeAuJkWfFJ-87Y1f9nDWXiJtJeLo2jq9zHxxjv18vNppnjRFZVaG8GeD0Dvb8vf1CAm8tlCGiz7LJItg_2xd1Fl6zqbe7ZvVOlHdaBeCM-uN6ss51.jpg?r=bd7">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABURDua0O4CF19k2STFHHjE8PK48FwNhtVGWKjcnrlWjzDRH24_pqqnqdPkuwhHA0HSgM-wPscG-oH5zktl94DFy1gUINEKunItU.webp?r=f30">
-            </div>
-            <a href="#section11" class="arrow__btn">›</a>
-            </section>
-            <section id="section11">
-            <a href="#section10" class="arrow__btn">‹</a>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbVtbhwOoTSeCO28RN4KGuXyl86_bjcWT01oypPONsGoR2bSMIreNDvybrdsNqwOcyZWUlyWLopDmFitNoMMdrJkAwh-t_QKei6j7VHpsodyii5-gFenIqrpF8dfjn7HzR60.jpg?r=6a8">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWmGb5ZylRvPgp8-3iLJmDHar7ZdmBhaPl9LT4ier3d0fAeIcN2zfnAsNFpzHTXpYDK_hDVVhzjtGYQKg2nMW6fJTlqUYO1suXo.webp?r=98a">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXd9HHoT40J0RMAJDG-SNaRO1ow6rv-7DR9m_DUEOy5s_PvIBT-dtycJluxlOIc02HGHgryxRC-KDPK9LhONI0u2GrovB8axpEGsWje7x6ADwTVOjaWlUAeLpNs4_B4rAlEn.jpg?r=49e">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaBu9kS79sbO1CgU1BSwCXEDmYYyl8S8aXuYmnu6f6-VG5U7rep1idMyGQJwybJDU1ty0X6H4bnbl8B4QnL7f98lY_oVjxpfIgE.webp?r=4c4">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWf9LBq5ToLZb8B1k78IOM1MQbm86aV481vCbh4b8-IvK3A3vFar-LaH9kC5I7ZR3iy4U7Hg5rm3qxjgyIdx14f9mAvejCgt37Q.webp?r=fe7">
-            </div>
-            <a href="#section12" class="arrow__btn">›</a>
-            </section>
-            <section id="section12">
-            <a href="#section11" class="arrow__btn">‹</a>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUJSAVADPN5xPWnTlXl38tVORsXJufEbGcv8DR6OcA416suR4qc_y2cmeoXHsGOd7vv9aYLIq_ZvDS8Zjb6lKbjwqLtLt0n5i_o.webp?r=ea3">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdwhZtU9Tr2BH0dpXgZZp-HaGhyXsgC8GLpoqQKLR72K9yQEkcLRrTPiqGgTDG1wEalFHM1Y956EqEdRYm-aUKmSkUjwjGavTYM.webp?r=7b6">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXpRmtYyZMDQYGeHoi-Z1PDk5uRHym901oJ7bnMwZt7fAwSQ4XKaBe7F5A8NG3b2c64yUMgqnWr15ljE1qpMbNvXBhJ7n9SCs9E.webp?r=2e4">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYwfajBpLLvRkWcnPIE0AUZO0sq0A0_ETYebxOmy_fYa7bkGJsAd8E8vJKpeg174Lum06Su1U1p1t1AjYCTLopzAT5FBgxETLEU.webp?r=8a2">
-            </div>
-            <div class="item">
-            <img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYNqtqw4wBWr2WJ1hy-rzz2jHs8prCnXmmMkV-TrykP_6VHc8iGBx-W3ihqXZotJe8Cj79Ty-eqhXuQXnv3EV0WW1hM-jLDPsvg.webp?r=cfd">
-            </div>
-            <a href="#section10" class="arrow__btn">›</a>
-            </section>
-            </div>
+        <section class="thumbSection">
+
+            <div class="thumbTiles swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZR5vKXxcOXIYhPM1SDoV_YHTrDnGvDFextj1BHhb_vfqzqrD8xR4vg6AwALfr_OxPBAneMFzf1QeiSeEzOZoxLi7KzgV5-vDlA.webp?r=8ef" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdCLIK4MkKPRPi5zhchTeAuJkWfFJ-87Y1f9nDWXiJtJeLo2jq9zHxxjv18vNppnjRFZVaG8GeD0Dvb8vf1CAm8tlCGiz7LJItg_2xd1Fl6zqbe7ZvVOlHdaBeCM-uN6ss51.jpg?r=bd7" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVTSXUXJW8D3BtW1NYiAbUM-1hkFB38JwEV3ZiO74UURqVCvd_I4JNMlltkjb-aCrtstJ0wZ39xXIrj7yAukwwOqtqpCWs_leWQ.webp?r=24f" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe5htHVu08LbTjgrX4ajJ8SgGt9Z5LScORnE_7tIeTYSq7DTMj97i9yPOQKPix5jjQ4xexNI2GVIif1zzVmZeeKMX-TRZatwPJU.webp?r=780" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABURDua0O4CF19k2STFHHjE8PK48FwNhtVGWKjcnrlWjzDRH24_pqqnqdPkuwhHA0HSgM-wPscG-oH5zktl94DFy1gUINEKunItU.webp?r=f30" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWmGb5ZylRvPgp8-3iLJmDHar7ZdmBhaPl9LT4ier3d0fAeIcN2zfnAsNFpzHTXpYDK_hDVVhzjtGYQKg2nMW6fJTlqUYO1suXo.webp?r=98a" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaBu9kS79sbO1CgU1BSwCXEDmYYyl8S8aXuYmnu6f6-VG5U7rep1idMyGQJwybJDU1ty0X6H4bnbl8B4QnL7f98lY_oVjxpfIgE.webp?r=4c4" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWf9LBq5ToLZb8B1k78IOM1MQbm86aV481vCbh4b8-IvK3A3vFar-LaH9kC5I7ZR3iy4U7Hg5rm3qxjgyIdx14f9mAvejCgt37Q.webp?r=fe7" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbVtbhwOoTSeCO28RN4KGuXyl86_bjcWT01oypPONsGoR2bSMIreNDvybrdsNqwOcyZWUlyWLopDmFitNoMMdrJkAwh-t_QKei6j7VHpsodyii5-gFenIqrpF8dfjn7HzR60.jpg?r=6a8" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXd9HHoT40J0RMAJDG-SNaRO1ow6rv-7DR9m_DUEOy5s_PvIBT-dtycJluxlOIc02HGHgryxRC-KDPK9LhONI0u2GrovB8axpEGsWje7x6ADwTVOjaWlUAeLpNs4_B4rAlEn.jpg?r=49e" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUJSAVADPN5xPWnTlXl38tVORsXJufEbGcv8DR6OcA416suR4qc_y2cmeoXHsGOd7vv9aYLIq_ZvDS8Zjb6lKbjwqLtLt0n5i_o.webp?r=ea3" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdwhZtU9Tr2BH0dpXgZZp-HaGhyXsgC8GLpoqQKLR72K9yQEkcLRrTPiqGgTDG1wEalFHM1Y956EqEdRYm-aUKmSkUjwjGavTYM.webp?r=7b6" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXpRmtYyZMDQYGeHoi-Z1PDk5uRHym901oJ7bnMwZt7fAwSQ4XKaBe7F5A8NG3b2c64yUMgqnWr15ljE1qpMbNvXBhJ7n9SCs9E.webp?r=2e4" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYwfajBpLLvRkWcnPIE0AUZO0sq0A0_ETYebxOmy_fYa7bkGJsAd8E8vJKpeg174Lum06Su1U1p1t1AjYCTLopzAT5FBgxETLEU.webp?r=8a2" alt="" class="thumbTile__image"></a></div>
+                        <div class="swiper-slide"><a href="#" class="thumbTile"><img src="https://occ-0-1490-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYNqtqw4wBWr2WJ1hy-rzz2jHs8prCnXmmMkV-TrykP_6VHc8iGBx-W3ihqXZotJe8Cj79Ty-eqhXuQXnv3EV0WW1hM-jLDPsvg.webp?r=cfd" alt="" class="thumbTile__image"></a></div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+        </div>
+        </section>
 
     </section>
 
@@ -318,22 +218,22 @@
 
             <div class="footer-links">
                 <ul class="footer-link">
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
-                    <li class="link" ><a href="#">Lorem, ipsum.</a></li>
+                    <li class="link" ><a href="#">Sesli Betimleme</a></li>
+                    <li class="link" ><a href="#">Yardım Merkezi</a></li>
+                    <li class="link" ><a href="#">Hediye Kartları</a></li>
+                    <li class="link" ><a href="#">medya merkezi</a></li>
+                    <li class="link" ><a href="#">yatırımcı ilişkileri</a></li>
+                    <li class="link" ><a href="#">iş imkanları</a></li>
+                    <li class="link" ><a href="#">kullanım koşulları</a></li>
+                    <li class="link" ><a href="#">gizlilik</a></li>
+                    <li class="link" ><a href="#">yasak hükümler</a></li>
+                    <li class="link" ><a href="#">çerez tercihleri</a></li>
+                    <li class="link" ><a href="#">kurumsal bilgiler</a></li>
+                    <li class="link" ><a href="#">bize ulaşın</a></li>
                 </ul>
             </div>
 
-            <a href="#" class="footer-btn">Hizmet Kodu</a>
+            <div class="btn"><a href="#" class="footer-btn">Hizmet Kodu</a></div>
 
             <span class="footer-end"><i class='bx bx-copyright'></i>1997-2022 Netflix, Inc.</span>
         </div>
