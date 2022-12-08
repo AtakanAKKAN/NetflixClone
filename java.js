@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
     freeMode: true,
     loopAdditionalSlides: 5,
-    speed: 500,
+    speed: 1200,
   
     // Navigation arrows
     navigation: {
@@ -31,9 +31,15 @@ const swiper = new Swiper('.swiper', {
     breakpoints:{
       //when window width is >= 640px
       640:{
-          slidesPerView: 5,
-          slidesPerGroup: 5,
+          slidesPerView: 4,
+          slidesPerGroup: 3,
           freeMode: false,
+      },
+
+      1096:{
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        freeMode: false,
       },
     },
   
